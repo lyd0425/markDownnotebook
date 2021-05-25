@@ -7,29 +7,26 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style>
+        body{
+            margin:0;
+        }
     .notebook,.desk,.markdown{
        height:1000px;
     }
     .notebook{
         width:20%;
-        position:absolute;
-        left:0;
-        top:0;
+        float:left;
         background-color: orangered;
 
     }
     .desk{
         width:40%;
-        position:absolute;
-        left:20%;
-        top:0;
+        float:left;
         background-color: orchid;
     }
     .markdown{
         width:40%;
-        position:absolute;
-        left:60%;
-        top:0;
+        float: right;
         background-color: palevioletred;
     }
     </style>
