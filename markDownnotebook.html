@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,58 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style>
-        body{
-            margin:0;
+        body {
+            margin: 0;
+            padding: 0;
         }
-    .notebook,.desk,.markdown{
-       height:1000px;
-    }
-    .notebook{
-        width:20%;
-        float:left;
-        background-color: orangered;
 
-    }
-    .desk{
-        width:40%;
-        float:left;
-        background-color: orchid;
-    }
-    .markdown{
-        width:40%;
-        float: right;
-        background-color: palevioletred; 
-    }
+        .container {
+            display: flex;
+        }
+
+        .notebook,
+        .desk,
+        .markdown {
+            height: 1000px;
+        }
+
+        .notebook {
+            width: 20%;
+            flex: 1;
+            background-color: orangered;
+
+        }
+
+        .desk {
+            flex: 1;
+            width:40%;
+            background-color: orchid;
+        }
+
+        .markdown {
+            width: 40%;
+
+            background-color: palevioletred;
+        }
     </style>
 
 </head>
+
 <body>
+
     <div id="notebook">
-    <div class=notebook>notebook</div>
-    <div class=desk>desk</div>
-    <div class=markdown>markdown</div>
+        <div class=container>
+            <div class=notebook>notebook</div>
+            <div class=desk>desk</div>
+            <div class=markdown>markdown</div>
+        </div>
     </div>
     <script>
-    var vm =new Vue({
-        el:"#notebook"
-    })
+        var vm = new Vue({
+            el: "#notebook"
+        })
     </script>
-    
+
 </body>
+
 </html>
