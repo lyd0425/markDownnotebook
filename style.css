@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    
+}
+
+#notebook {
+    display: flex;
+}
+
+.notebook,
+.input,
+.markdown {
+    height: 1000px;
+}
+
+.notebook {
+    width: 20%;
+    background-color: orangered;
+
+}
+
+
+.input {
+    width:40%;
+    background-color: orchid;
+}
+
+.markdown {
+    width: 40%;
+
+    background-color: palevioletred;
+}
+.inputText{
+    width: 97%;
+    height: 100%;
+    background-color: bisque;
+}
